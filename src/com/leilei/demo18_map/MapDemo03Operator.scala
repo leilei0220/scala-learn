@@ -45,6 +45,10 @@ object MapDemo03Operator {
     for ((k, v) <- hashMap) {
       println(s"k=:$k,v=:$v")
     }
+    println("-" * 20)
+    for ((k, v) <- hashMap if v > 1) {
+      println(s"k=:$k,v=:$v")
+    }
     // 移除key为1的键值对
     println(s"map remove1 3前：$map")
     map.remove(1)
