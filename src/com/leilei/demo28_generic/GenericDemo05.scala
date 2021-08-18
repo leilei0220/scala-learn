@@ -27,7 +27,7 @@ object GenericDemo05 {
     var d3: Demo2[Man] = new Demo2[Man]
     var d4: Demo2[Person] = d3
 
-    // 协变   Person与 Man 为父子关系，  new Demo2[Person] 与  Demo2[Man]  关系颠倒 子与父的关系
+    // 逆变   Person与 Man 为父子关系，  new Demo2[Person] 与  Demo2[Man]  关系颠倒 子与父的关系
     var d5: Demo3[Person] = new Demo3[Person]
     var d6: Demo3[Man] = d5
 
