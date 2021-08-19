@@ -6,7 +6,7 @@ import scala.collection.mutable.ListBuffer
  * @author lei
  * @date 2021/8/8 21:43
  * @version 1.0
- * @desc 偏函数示例
+ * @desc 偏函数（大括号包裹起来的多组case语句）示例
  */
 object PartialFunctionDemo01 {
   def main(args: Array[String]): Unit = {
