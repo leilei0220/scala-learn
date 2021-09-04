@@ -10,7 +10,7 @@ import scala.collection.mutable
  */
 object MapDemo {
   def main(args: Array[String]): Unit = {
-    var set = mutable.Set("a", "b", "c")
+    var set: mutable.Set[String] = mutable.Set("a", "b", "c")
     println(set)
     println("-" * 20)
     // 类型推断

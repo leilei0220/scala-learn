@@ -16,10 +16,12 @@ object TestUser02 {
 
 
   class User{
+    // 私有化字段
     private var name:String=_
-
+    // 私有化字段
     private var age:Int=_
 
+    // get set方法
     def getName:String=name
 
     def setName(name:String):Unit=this.name=name

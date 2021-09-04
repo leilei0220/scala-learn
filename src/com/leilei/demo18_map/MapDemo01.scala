@@ -9,10 +9,14 @@ package com.leilei.demo18_map
  */
 object MapDemo01 {
   def main(args: Array[String]): Unit = {
-    // 定义方式
+    // 定义方式 1
     var map = Map(("张麻子", 15), ("马邦德", 22), ("马邦德", 23))
+    // 定义方式 2
     var map2 = Map("张麻子" -> 15, "马邦德" -> 22, "马邦德" -> 23)
+    // 定义空Map
+    var map3: Map[String, Int] = Map[String,Int]()
     println(s"map:$map")
     println(s"map2:$map2")
+
   }
 }

@@ -10,7 +10,7 @@ import scala.collection.mutable.ArrayBuffer
  */
 object ArrayDemo2 {
   def main(args: Array[String]): Unit = {
-    var variableArray = ArrayBuffer[String]()
+    var variableArray: ArrayBuffer[String] = ArrayBuffer[String]()
     println("variableArray" + variableArray)
 
     var variableArray2= ArrayBuffer(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)

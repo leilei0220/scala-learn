@@ -10,9 +10,9 @@ object GroupByDemo {
   def main(args: Array[String]): Unit = {
     var set=Set("马邦德"->"男","张麻子"->"男","花姐"->"女")
     println(set)
-    var groupResult=set.groupBy(_._2)
+    var groupResult: Map[String, Set[(String, String)]] =set.groupBy(_._2)
     println(groupResult)
-    var groupResult2=groupResult.map(x => (x._1,"人数:"+x._2.size))
+    var groupResult2: Map[String, String] =groupResult.map(x => (x._1,"人数:"+x._2.size))
     println(groupResult2)
   }
 }

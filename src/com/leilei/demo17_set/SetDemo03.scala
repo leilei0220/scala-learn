@@ -13,7 +13,7 @@ object SetDemo03 {
   def main(args: Array[String]): Unit = {
     // 注意  MutableSet 是我自定义了可变Set的别名
     // class scala.collection.mutable.HashSet
-    var scalableSet = MutableSet(1, 2, 3, 3)
+    var scalableSet: MutableSet[Int] = MutableSet(1, 2, 3, 3)
     println(scalableSet.getClass)
     println(scalableSet)
     // 添加一个元素 4

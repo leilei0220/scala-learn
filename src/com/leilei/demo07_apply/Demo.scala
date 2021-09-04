@@ -10,6 +10,8 @@ object Demo {
 
 
   def main(args: Array[String]): Unit = {
+    var px = new Person()
+    println(px)
     var p = new Person(name = "张三")
     println(p)
     var p1 = new Person(age = 18, name = "张三")

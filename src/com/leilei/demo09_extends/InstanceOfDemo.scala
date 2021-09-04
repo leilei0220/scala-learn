@@ -21,7 +21,6 @@ object InstanceOfDemo {
     if (car.isInstanceOf[Car]) {
       println("car 属于Car")
       var myCar = car.asInstanceOf[Car]
-      myCar.setName("CCCcar")
       myCar.run()
     }
 
@@ -45,7 +44,6 @@ object InstanceOfDemo {
   def runVehicle(vehicle:Vehicle):Unit= {
     if (vehicle.isInstanceOf[Car]) {
       var car = vehicle.asInstanceOf[Car]
-      car.setName("car..")
       car.run()
     }
   }

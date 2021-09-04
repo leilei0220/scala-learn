@@ -16,7 +16,7 @@ object ListDemo03Operator {
     listBuffer+=1
     println(listBuffer)
     // 获取列表首元素
-    println(listBuffer.head)
+    println(listBuffer.headOption)
 
     // 更改列表索引0位置的元素为1111
     listBuffer(0)=1111
@@ -40,6 +40,7 @@ object ListDemo03Operator {
 
     // 获取列表尾元素
     println(listBuffer.last)
+    println(listBuffer.lastOption)
 
     // 可变列表转不可变列表
     println(listBuffer.toList)

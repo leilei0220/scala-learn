@@ -8,16 +8,16 @@ package com.leilei.demo15_tuple
  */
 object TupleDemo01 {
   def main(args: Array[String]): Unit = {
-    var tuple0=()
-    var tuple1=("马邦德")
-    var tuple2=("马邦德",12)
+    val tuple0: Unit = ()
+    val tuple1=("马邦德")
+    val tuple2: (String, Int) =("马邦德",12)
     // 只有tuple2 大小的元组可以用此方式
-    var tuple2Copy="马邦德"-> 12
-    var tuple3=("张麻子",188,13)
-    var tuple4=("张麻子",188,13,true)
-    var tuple5=("张麻子",188,13,true,'A')
-    var tuple6=("张麻子",188,13,true,'A',2.2)
-    var tuple7=("张麻子",188,13,true,'A',2.2,0x123456)
+    val tuple2Copy: (String, Int) ="马邦德"-> 12
+    val tuple3: (String, Int, Int) =("张麻子",188,13)
+    val tuple4: (String, Int, Int, Boolean) =("张麻子",188,13,true)
+    val tuple5: (String, Int, Int, Boolean, Char) =("张麻子",188,13,true,'A')
+    val tuple6: (String, Int, Int, Boolean, Char, Double) =("张麻子",188,13,true,'A',2.2)
+    val tuple7: (String, Int, Int, Boolean, Char, Double, Int) =("张麻子",188,13,true,'A',2.2,0x123456)
     //------
     println(tuple0)
     println(tuple1)

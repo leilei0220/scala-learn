@@ -14,15 +14,15 @@ object Demo {
     println(list)
 
     // 获取所有语文成绩在60分以上的同学信息
-    val stu1 = list.filter(_._2 > 60)
+    val stu1: List[(String, Int, Int, Int)] = list.filter(_._2 > 60)
     println(stu1)
 
     // 获取所有学生的总成绩
-    val totalScoreColl = list.map(x => x._1 -> (x._2 + x._3 + x._4))
+    val totalScoreColl: List[(String, Int)] = list.map(x => x._1 -> (x._2 + x._3 + x._4))
     println(totalScoreColl)
 
     // 按照总成绩降序排列
-    var orderColl=totalScoreColl.sortWith((x,y)=>x._2>y._2)
+    var orderColl: List[(String, Int)] =totalScoreColl.sortWith((x, y)=>x._2>y._2)
     println(orderColl)
   }
 }

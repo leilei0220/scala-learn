@@ -10,10 +10,10 @@ import scala.collection.mutable.{HashMap => MutableHashMap, Map => MutableMap}
  */
 object MapDemo03Operator {
   def main(args: Array[String]): Unit = {
-    var map = MutableMap(1 -> "zs", 2 -> "ls", 3 -> "ww`")
+    var map: MutableMap[Int, String] = MutableMap(1 -> "zs", 2 -> "ls", 3 -> "ww`")
     //    var map = MutableMap((1, "zs"), (2, "ls"), (3, "ww"))
     // 指定为hashMap 定义 kv 泛型,且向其中添加元素
-    var hashMap = MutableHashMap[String, Int]()
+    var hashMap: MutableHashMap[String, Int] = MutableHashMap[String, Int]()
     // 添加元素
     hashMap.put("zs", 1)
     hashMap.put("ls", 2)

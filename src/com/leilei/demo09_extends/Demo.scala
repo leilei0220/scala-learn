@@ -8,14 +8,17 @@ package com.leilei.demo09_extends
  */
 object Demo {
   def main(args: Array[String]): Unit = {
-    var car=new Car
-    car.setName("节能")
-    car.setModel("东方红")
+    val car = new Car
+    // 子类属性 覆盖父类属性
+    car.name = "节能"
+    car.model = "东方红"
+    //使用了自己的name Model属性 car:节能+东方红....running
     car.run()
-    println("-"*20)
-    var bus =new Bus
-    bus.setName("万科")
-    bus.setModel("西方绿")
-    bus.run()
+
+    println("-" * 16)
+
+    val car2 = new Car
+    //使用了父类的name Model属性 车辆+麻麻牌....running
+    car2.run()
   }
 }

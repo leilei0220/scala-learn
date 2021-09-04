@@ -8,11 +8,11 @@ package com.leilei.demo20_collection_operator
  */
 object FlatMapDemo {
   def main(args: Array[String]): Unit = {
-    var set=Set("1#2#3#4#5","4#5#6#7#8#9")
-   var set2= set.flatMap(x=>x.split("#"))
+    var set = Set("1#2#3#4#5", "4#5#6#7#8#9")
+    var set2: Set[String] = set.flatMap(x => x.split("#"))
     println(s"set:$set")
     println(s"set2:$set2")
-    var set3= set.flatMap(_.split("#"))
+    var set3: Set[String] = set.flatMap(_.split("#"))
     println(s"set3:$set3")
   }
 }

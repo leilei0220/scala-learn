@@ -7,14 +7,18 @@ package com.leilei.demo11_trait
  * @desc 继承多个特质 with
  */
 object Demo02 {
-
+  // 特质1
   trait Vehicle{
+    // 含有抽象方法 子类必须复写
     def run()
   }
+  // 特质2
   trait Product{
+    // 含有抽象方法 子类必须复写
     def buy(price:Double)
   }
 
+  // 定义普通类，同时实现 Vehicle Product两个特质，其中的抽象方法，必须都要被复写
   class Car extends Vehicle with  Product {
     override def run(): Unit = print("car--run")
 

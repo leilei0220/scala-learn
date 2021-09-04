@@ -8,21 +8,9 @@ package com.leilei.demo09_extends
  */
 class Vehicle {
 
-  var name: String = _
+  var name: String = "车辆"
 
-  var model: String = _
-
-  def setName(name:String): Unit = {
-    this.name = name
-  }
-
-  def setModel(model:String): Unit = {
-    this.model = model
-  }
-
-  def getName: String = name
-
-  def getModel: String = model
+  var model: String = "麻麻牌"
 
   def run(): Unit = {
     print("vehicle.....running!")

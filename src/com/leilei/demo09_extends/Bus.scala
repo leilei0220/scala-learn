@@ -7,19 +7,8 @@ package com.leilei.demo09_extends
  * @desc
  */
 class Bus extends Vehicle {
-  override def setName(name:String): Unit = {
-    this.name = name
-  }
-
-  override def setModel(model:String): Unit = {
-    this.model = model
-  }
-
-  override def getName: String = name
-
-  override def getModel: String = model
 
   override def run(): Unit = {
-    println(s"bus:${name}+${model}....running")
+    println(s"bus:$name+$model....running")
   }
 }

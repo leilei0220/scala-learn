@@ -1,6 +1,6 @@
 package com.leilei.demo12_package
 
-import java.util
+import java.util._
 
 /**
  * @author lei

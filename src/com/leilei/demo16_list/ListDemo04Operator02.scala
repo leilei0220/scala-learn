@@ -20,8 +20,6 @@ object ListDemo04Operator02 {
 
     println(s"获取尾部元素:${list.last}")
 
-    println(s"元素反转:${list.last}")
-
     println(s"元素反转:${list.reverse}")
 
     println(s"除首元素外其余全部元素:${list.tail}")

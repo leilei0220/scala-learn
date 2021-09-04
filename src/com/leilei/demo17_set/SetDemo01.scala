@@ -8,9 +8,8 @@ package com.leilei.demo17_set
  */
 object SetDemo01 {
   def main(args: Array[String]): Unit = {
-    var emptySet= Set[String]()
+    var emptySet: Set[String] = Set[String]()
     var set = Set(1, 1, 2, 3, 4, 5, 6, 7)
-
     println(set)
     // 获取set集长度
     println(set.size)

@@ -8,13 +8,16 @@ package com.leilei.demo03_constructor
  */
 object ConstructorDemo01 {
   def main(args: Array[String]): Unit = {
+    // 主构造器 ,按照构造器只当参数，依次传参
     val user1 = new User("zs", 11)
     println(user1)
     println(s"user1: name:${user1.name} age:${user1.age} sex:${user1.age}")
 
+    // 主构造器 ,不按照构造参数依次传参，而是参数指定参数变量传参
     val user2=new User(age=12,name="ls",sex = true)
     println("user2"+user2)
 
+    // 辅助构造器
     val user3=new User(Array("adas",18,true))
     println("user3"+user3)
     println(s"user3:name:${user3.name} age:${user3.age} sex:${ if (user3.sex)"男" else "女"}")
