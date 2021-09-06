@@ -31,6 +31,9 @@ object ForeachDemo {
     // 普通姿势
     list.foreach((x: String) => println(x))
     println("-" * 20)
+    // 并行流
+    list.par.foreach((x: String) => println(x,Thread.currentThread().getName))
+    println("-" * 20)
     // 类型推断
     list.foreach(x => println(x))
     println("-" * 20)

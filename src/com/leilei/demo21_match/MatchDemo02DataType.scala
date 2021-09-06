@@ -10,9 +10,9 @@ import com.leilei.demo13_caseClass.Demo.User
  */
 object MatchDemo02DataType {
   def main(args: Array[String]): Unit = {
-    var user:Any = 123
+    var variable:Any = new User
 
-    user match {
+    variable match {
       case x:Int=> println(s"元素$x 为Int")
       case x:String=> println(s"元素$x 为String")
       case x:User=> println(s"元素$x 为User")
@@ -20,11 +20,13 @@ object MatchDemo02DataType {
 
     // 简写模式 如果变量在表达式中未使用,可用下划线替代变量名
 
-    user match {
-      case _:Int=> println(s"元素 为Int")
-      case _:String=> println(s"元素 为String")
-      case _:User=> println(s"元素 为User")
+   var result:Int= variable match {
+      case _:Int=> println(s"元素 为Int");  1
+      case _:String=> println(s"元素 为String"); 2
+      case _:User=> println(s"元素 为User"); -1
     }
+    // 打印结果 -1
+    println(result)
   }
 
    class User{
